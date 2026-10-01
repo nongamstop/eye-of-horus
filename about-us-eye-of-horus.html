@@ -1,0 +1,301 @@
+<style>
+  :root{
+    --bg:#ffffff;
+    --ink:#172033;
+    --muted:#5d6678;
+    --line:#e7eaf0;
+    --soft:#f7f8fb;
+    --soft2:#fff7ed;
+    --accent:#c5162e;
+    --accent-dark:#a90f24;
+    --gold:#d7a33a;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.65;
+  }
+  article{
+    width:min(100%, 920px);
+    margin:0 auto;
+    padding:28px 18px 42px;
+  }
+  h1{
+    margin:0 0 16px;
+    font-size:clamp(2rem,5vw,3.35rem);
+    line-height:1.08;
+    letter-spacing:-.04em;
+    color:#111827;
+  }
+  h2{
+    margin:34px 0 12px;
+    font-size:clamp(1.35rem,3vw,1.85rem);
+    line-height:1.2;
+    letter-spacing:-.025em;
+  }
+  p{margin:0 0 15px;color:var(--muted)}
+  strong{color:var(--ink)}
+  .intro{
+    padding:18px 20px;
+    background:linear-gradient(135deg,#f8fafc 0%,#fff7ed 100%);
+    border:1px solid var(--line);
+    border-radius:18px;
+    margin-bottom:22px;
+  }
+  .note,.trust-box{
+    border:1px solid var(--line);
+    background:var(--soft);
+    border-radius:16px;
+    padding:16px 18px;
+    margin:18px 0;
+  }
+  .note strong,.trust-box strong{display:block;margin-bottom:5px}
+  .values{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    margin:18px 0;
+  }
+  .value-card{
+    border:1px solid var(--line);
+    background:#fff;
+    border-radius:16px;
+    padding:15px;
+  }
+  .value-card b{
+    display:block;
+    margin-bottom:6px;
+    color:#111827;
+  }
+  .value-card span{
+    display:block;
+    color:var(--muted);
+    font-size:.95rem;
+  }
+  .cover-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    margin:14px 0 2px;
+    padding:0;
+    list-style:none;
+  }
+  .cover-list li{
+    border:1px solid var(--line);
+    background:#fff;
+    border-radius:14px;
+    padding:11px 13px;
+    color:var(--muted);
+  }
+  .contact-card{
+    border:1px solid var(--line);
+    background:#fff;
+    border-radius:16px;
+    padding:16px 18px;
+    margin-top:12px;
+  }
+  .contact-card p{margin-bottom:8px}
+  .cta-wrap{
+    margin-top:28px;
+    border:1px solid var(--line);
+    border-radius:20px;
+    background:#fbfcff;
+    padding:16px;
+  }
+  .cta-kicker{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    align-items:flex-end;
+    margin-bottom:12px;
+  }
+  .cta-kicker strong{
+    font-size:1.08rem;
+    letter-spacing:-.015em;
+  }
+  .cta-kicker span{
+    color:var(--muted);
+    font-size:.93rem;
+  }
+  .products{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:10px;
+  }
+  .product-card{
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+    min-height:0;
+    border:1px solid var(--line);
+    background:#fff;
+    border-radius:16px;
+    padding:13px;
+  }
+  .product-card .name{
+    font-weight:800;
+    color:#111827;
+    font-size:1.02rem;
+  }
+  .product-card .offer{
+    color:var(--muted);
+    font-size:.92rem;
+    line-height:1.35;
+  }
+  .product-card ul{
+    margin:0;
+    padding-left:17px;
+    color:var(--muted);
+    font-size:.88rem;
+    line-height:1.45;
+  }
+  .product-card a{
+    margin-top:auto;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    padding:10px 12px;
+    border-radius:12px;
+    background:var(--accent);
+    color:#fff;
+    font-weight:800;
+    text-decoration:none;
+    transition:background .18s ease, transform .18s ease;
+  }
+  .product-card a:hover{
+    background:var(--accent-dark);
+    transform:translateY(-1px);
+  }
+  @media (max-width:860px){
+    .products{grid-template-columns:repeat(2,1fr)}
+    .values{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){
+    article{padding:22px 14px 34px}
+    .intro,.note,.trust-box,.contact-card,.cta-wrap{border-radius:14px}
+    .cover-list,.products{grid-template-columns:1fr}
+    .cta-kicker{display:block}
+    .cta-kicker span{display:block;margin-top:4px}
+  }
+</style>
+
+<article>
+  <h1>Eye Of Horus</h1>
+<a href="#"><img src="images/about-us-eye-of-horus.webp" alt="About Us  Eye Of Horus" style="display:block;width:100%;max-width:1200px;height:auto;border-radius:8px;margin:20px auto;"></a>
+
+  <div class="intro">
+    <p><strong>About us</strong> is our straight-talking space for players who want to understand Eye Of Horus before they stake real money. We review the slot, the casinos that feature it, the bonuses wrapped around it, and the small-print details that often decide whether a “great offer” is actually worth taking.</p><br>
+  </div>
+
+  <h2>Our Story</h2>
+  <p>About Us began after a rainy Tuesday train delay at Leeds station in 2021. Two of our founders were heading back from a payments conference when they noticed three different casino ads promoting Eye Of Horus with wildly different return claims. One said “top payout potential”, another hinted at “enhanced reels”, and a third buried the actual wagering conditions behind four clicks.</p><br>
+  <p>That was the spark. We did not set out to build another glossy casino directory. We started with one shared spreadsheet, a prepaid testing budget, and a rule: if a promotion could not be explained clearly to a regular player in under two minutes, it needed investigating. The first version of the site was written after work from a rented desk above a print shop. Today, our editorial base is at <strong>42 Kestrel Yard, Leeds, LS2 7QN, United Kingdom</strong>, where we still use the same spreadsheet-first approach, just with better tools and stronger coffee.</p><br>
+
+  <h2>Our Mission &amp; Values</h2>
+  <p>Our mission is specific: <strong>we only recommend Eye Of Horus casino offers where the wagering requirement is 40x or lower, withdrawal limits are visible before sign-up, and the game contribution is stated clearly</strong>. If those three points are missing, we say so.</p><br>
+  <div class="values">
+    <div class="value-card">
+      <b>Clarity over hype</b>
+      <span>We translate bonus terms into plain English and flag anything that feels deliberately vague.</span>
+    </div>
+    <div class="value-card">
+      <b>Testing before ranking</b>
+      <span>Casinos are checked through real account journeys, not copied marketing claims.</span>
+    </div>
+    <div class="value-card">
+      <b>Player control</b>
+      <span>We highlight deposit limits, cooling-off tools, and responsible gambling options because they matter.</span>
+    </div>
+  </div>
+  <p>Eye Of Horus is a brilliant game when expectations are realistic. Our job is to help you understand volatility, RTP, bonus restrictions, and banking speed before the first spin.</p><br>
+
+  <h2>Meet the People Behind About Us </h2>
+  <p>Our lead reviewer came into iGaming from a less glamorous corner of the industry: card payment reconciliation. Before writing casino reviews, they spent five years checking failed withdrawals, chargeback patterns, and merchant delay reports for online entertainment brands. That background shapes our reviews. We care about whether a cashier works at 11pm on a Sunday, whether ID checks are requested fairly, and whether “instant withdrawal” actually means instant.</p><br>
+  <p>The wider team includes a bonus terms editor, a slot mechanics researcher, and two part-time testers who document sign-up flows on mobile. Nobody on the editorial side is paid to soften criticism. Commercial relationships may affect where a casino appears, but they do not decide what we say about it.</p><br>
+
+  <h2>Why Trust Us?</h2>
+  <p>Every casino we feature for Eye Of Horus goes through a compact but demanding review process. We create an account, check the licence details, read the bonus terms line by line, compare RTP information, and test the cashier flow with a small controlled deposit.</p><br>
+  <div class="trust-box">
+    <strong>Our distinctive check: the “second-screen terms test”.</strong>
+    <p>One reviewer signs up on mobile while another independently tries to find the same bonus terms on desktop. If the rules do not match, or if key withdrawal limits are easier to find on one device than the other, we record it in the review. This method helped us catch a casino that advertised Eye Of Horus as bonus-eligible on mobile but excluded it in the desktop terms.</p><br>
+  </div>
+  <p>That is why our About us content is practical rather than decorative. We would rather publish a short warning than a long sales pitch.</p><br>
+
+  <h2>What We Cover</h2>
+  <p>We focus on the details that affect real play, especially when Eye Of Horus appears inside welcome packages, reload offers, or free spin deals.</p><br>
+  <ul class="cover-list">
+    <li>Eye Of Horus RTP, volatility, paylines, and feature behaviour</li>
+    <li>Casino licensing, payment speed, and withdrawal limits</li>
+    <li>Bonus wagering, max bet rules, and excluded-game clauses</li>
+    <li>Mobile performance, account setup, and verification checks</li>
+    <li>Responsible gambling tools and player support quality</li>
+    <li>Comparison notes for players choosing between similar offers</li>
+  </ul>
+
+  <h2>Get in Touch</h2>
+  <p>If you have spotted a confusing Eye Of Horus promotion, a changed bonus term, or a casino claim that does not match your experience, tell us. We review reader submissions weekly and prioritise anything involving payments, misleading terms, or responsible gambling concerns.</p><br>
+  <div class="contact-card">
+    <p><strong>Editorial office:</strong> 42 Kestrel Yard, Leeds, LS2 7QN, United Kingdom</p><br>
+    <p><strong>Email:</strong> hello@aboutus-play.co.uk</p><br>
+    <p><strong>Response time:</strong> usually within two working days.</p><br>
+  </div>
+  <p>About us is more than a label on the page. It is a promise that our reviews should help you make cleaner, calmer decisions before you play.</p><br>
+
+  <div class="cta-wrap">
+    <div class="cta-kicker">
+      <strong>Recommended casino picks</strong>
+      <span>Compact options to compare before playing</span>
+    </div>
+    <div class="products">
+      <div class="product-card">
+        <div class="name">DonBet</div>
+        <div class="offer">Welcome package with sports and casino promos.</div>
+        <ul>
+          <li>Broad slot lobby</li>
+          <li>Simple mobile layout</li>
+        </ul>
+        <a href="#donbet">Play Now</a>
+      </div>
+      <div class="product-card">
+        <div class="name">MyStake</div>
+        <div class="offer">Casino bonuses and regular player promotions.</div>
+        <ul>
+          <li>Fast account setup</li>
+          <li>Crypto-friendly cashier</li>
+        </ul>
+        <a href="#mystake">Play Now</a>
+      </div>
+      <div class="product-card">
+        <div class="name">GoldenBet</div>
+        <div class="offer">Starter offers across slots and live casino.</div>
+        <ul>
+          <li>Clean bonus area</li>
+          <li>Popular game providers</li>
+        </ul>
+        <a href="#goldenbet">Play Now</a>
+      </div>
+      <div class="product-card">
+        <div class="name">VeloBet</div>
+        <div class="offer">Flexible welcome deals for new players.</div>
+        <ul>
+          <li>Quick navigation</li>
+          <li>Live chat support</li>
+        </ul>
+        <a href="#velobet">Play Now</a>
+      </div>
+      <div class="product-card">
+        <div class="name">Rolletto</div>
+        <div class="offer">Casino rewards with ongoing promotions.</div>
+        <ul>
+          <li>Large slots catalogue</li>
+          <li>Multiple payment options</li>
+        </ul>
+        <a href="#rolletto">Play Now</a>
+      </div>
+    </div>
+  </div>
+</article>
